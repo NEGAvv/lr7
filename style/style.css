@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+
+@keyframes colorChange {
+    0% {
+        background-position: top;
+        background-size: 400% 200%;
+
+    }
+
+    35% {
+        background-position: right;
+        background-size: 200% 200%;
+    }
+
+    65% {
+        background-position: bottom;
+        background-size: 400% 200%;
+    }
+
+    100% {
+        background-position: left;
+        background-size: 200% 200%;
+    }
+}
+
+* {
+    margin: 0;
+    font-family: 'Oswald', sans-serif;
+    color: rgb(000, 000, 000);
+}
+
+body {
+    background: radial-gradient(circle, rgb(245, 125, 1), rgb(252, 3, 23));
+    animation: colorChange 7s infinite alternate cubic-bezier(0.4, 0.7, 0.6, 0.4);
+    width: 100%;
+}
+
+header {
+    color: rgb(000, 000, 000);
+    font-size: 4rem;
+    text-align: center;
+    text-transform: uppercase;
+    word-wrap: break-word;
+}
+
+.black_ball {
+    margin: 2% auto;
+    width: 300px;
+    height: 300px;
+    background-color: rgb(000, 000, 000);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background: linear-gradient(145deg, #3f3e3e, #353434);
+    box-shadow: 14px 14px 28px #292828, -14px -14px 28px #4d4c4c;
+}
+
+.white_ball {
+    width: 170px;
+    height: 170px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.text_answer {
+    color: rgb(000, 000, 000);
+    font-size: 8rem;
+    text-align: center;
+}
+
+.box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+input {
+    width: 200px;
+    height: 30px;
+    border-radius: 25px;
+    padding: 1% 1%;
+}
+
+input[type="text"] {
+    font-size: 18px;
+}
+input:focus {
+    outline: 4px solid darkorange;
+}
+input:hover {
+    outline: 4px solid darkorange;
+}
+
+button {
+    width: 100px;
+    height: 30px;
+    position: relative;
+    top: 20px;
+}
+
+.for_button {
+    background-color: rgb(155, 69, 3);
+    border-radius: 30px;
+    color: rgb(255, 255, 255);
+}
+.for_button:hover {
+    background-color: rgb(109, 48, 1);
+}
+.for_button:active {
+    background-color: rgb(206, 91, 3);
+}
